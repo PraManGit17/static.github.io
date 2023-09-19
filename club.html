@@ -71,6 +71,16 @@ body{opacity:50;background:black;}
   overflow: hidden;
   top: 0;
 }
+.text:before{
+  left: 3px;
+  text-shadow: -2px 0 red;
+  animation: glitch-1 2s linear infinite reverse;
+}
+ .text:after{
+  left: -3px;
+  text-shadow: -2px 0 blue;
+  animation: glitch-2 2s linear infinite reverse;
+}
 @keyframes glitch-1 {
   0% {
     clip: rect(132px, auto, 101px, 30px);
@@ -81,7 +91,7 @@ body{opacity:50;background:black;}
   10% {
     clip: rect(40px, auto, 66px, 30px);
   }
-  15% 
+  15% {
     clip: rect(87px, auto, 82px, 30px);
   }
   20% {
@@ -233,7 +243,7 @@ body{opacity:50;background:black;}
 
 .v{position:relative;left:750px;bottom:180px;border:white solid;}
 
-.h{color:white;position:relative;left:500px;font-size:28px}
+.h{color:white;position:relative;left:500;font-size:28px}
   
 .i{position:relative;left:30px;}
 
@@ -404,6 +414,8 @@ body{opacity:50;background:black;}
     
     
 }
+
+ 
 
  
 
